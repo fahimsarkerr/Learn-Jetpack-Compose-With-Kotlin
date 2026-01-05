@@ -22,23 +22,25 @@ package com.example.kotlinseriestrial.`6_Interfaces`
 
 
 
-
-
-
-
-
-
-
-
+interface MakeSound{
+    fun makeSound()
+}
 
 
 // 3. How to implement Interface in class
 
+class Man : MakeSound {
+    override fun makeSound() {
+        println("Ha,Ha,Ha,Ha,Ha")
+    }
+}
 
-
-
-
-
+fun main() {
+    val Human = Man()
+    println("Man Sound")
+    Human.makeSound()
+    println("I am Right!")
+}
 
 
 

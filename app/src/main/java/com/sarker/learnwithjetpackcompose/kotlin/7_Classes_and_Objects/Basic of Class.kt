@@ -21,17 +21,21 @@ Think of a class like a car blueprint – it tells how the car should be built b
 
 
 
-
-
-
-
+class User{
+    fun Name(){
+        println("Fahim Sarder")
+    }
+}
 
 
 // 3. What is an Object?
 //An object is an instance of a class. You need an object to access a class’s properties and methods.
 
 
-
+fun main() {
+    val User = User()
+    User.Name()
+}
 
 
 
